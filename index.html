@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Use Case on Advanced JS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo span:first-child {
+      color: #6dc44a; /* green x */
+    }
+
+    .logo span:nth-child(2) {
+      color: #3399ff; /* blue ess */
+    }
+
+    .logo span:last-child {
+      color: #333;
+    }
+
+    .form-container {
+      border: 2px solid #3399ff;
+      padding: 20px;
+      border-radius: 6px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+
+    .form-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .form-row label {
+      width: 150px;
+      font-weight: bold;
+    }
+
+    .form-row input,
+    .form-row select {
+      flex: 1;
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    .button-wrapper {
+      margin-left: 150px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .table-heading {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Use Case on Advanced JS</h2>
+    <div class="logo">
+      <span>ax</span><span>ess</span> <span>academy</span>
+    </div>
+  </header>
+
+  <div class="form-container">
+    <div class="form-row">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter Name" />
+    </div>
+    <div class="form-row">
+      <label for="email">Email Id:</label>
+      <input type="email" id="email" placeholder="Enter email" />
+    </div>
+    <div class="form-row">
+      <label for="contact">Contact No:</label>
+      <input type="text" id="contact" placeholder="Enter contact no" />
+    </div>
+    <div class="form-row">
+      <label for="accountType">Account Type:</label>
+      <select id="accountType">
+        <option value="">Select account type</option>
+        <option value="savings">savings</option>
+        <option value="current">current</option>
+      </select>
+    </div>
+    <div class="button-wrapper">
+      <button onclick="addCustomer()">Add Customer</button>
+    </div>
+
+    <!-- Table inside the form box -->
+    <div class="table-heading">Customer List</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Contact</th>
+          <th>Account Type</th>
+        </tr>
+      </thead>
+      <tbody id="customerTableBody">
+        <tr>
+          <td>Sandra Rogers</td>
+          <td>Rogers@gmail.com</td>
+          <td>9999888877</td>
+          <td>savings</td>
+        </tr>
+        <tr>
+          <td>Steve Casey</td>
+          <td>Casey@gmail.com</td>
+          <td>8899888877</td>
+          <td>current</td>
+        </tr>
+        <tr>
+          <td>Michelle Michaels</td>
+          <td>Michaels@gmail.com</td>
+          <td>8899888899</td>
+          <td>current</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
