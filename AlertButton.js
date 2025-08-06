@@ -1,12 +1,8 @@
-import React from 'react';
+import React from "react";
 
 function AlertButton() {
-  const handleClick = () => {
-    alert("Button was clicked!");
-  };
-
   return (
-    <button onClick={handleClick}>
+    <button className="output-box" onClick={() => alert("Button clicked!")}>
       Click me Please
     </button>
   );

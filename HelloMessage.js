@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 
-function HelloMessage({ prop1 = "Default Prop1", prop2 = "Default Prop2" }) {
+function HelloMessage({ prop1 = "Default prop1", prop2 = null }) {
   return (
-    <div>
-      <p>{prop1}{prop2 && ` : ${prop2}`}</p>
+    <div className="output-box">
+      {prop1}
+      {prop2 && <span className="prop2"> : {prop2}</span>}
     </div>
   );
 }
