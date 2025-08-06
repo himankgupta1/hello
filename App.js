@@ -1,24 +1,27 @@
-import React from 'react';
-import HelloWorld from './HelloWorld';
-import HelloMessage from './HelloMessage';
-import Counter from './Counter';
-import AlertButton from './AlertButton';
-
 function App() {
   return (
-    <div style={{ padding: '20px' }}>
+    <div>
       <h2>UseCase 1 - Components, Props and States</h2>
 
-      <HelloWorld />
+      <div className="component-box">
+        <HelloWorld />
+      </div>
 
-      <HelloMessage prop1="Hi, Hello" />
-      <HelloMessage prop1="Message from Ramanujam" prop2="I got this in my dreams" />
+      <div className="component-box">
+        <HelloMessage prop1="Hi, Hello" />
+      </div>
 
-      <Counter />
+      <div className="component-box">
+        <HelloMessage prop1="Message from Ramanujam" prop2="I got this in my dreams" />
+      </div>
 
-      <AlertButton />
+      <div className="component-box">
+        <Counter />
+      </div>
+
+      <div className="component-box">
+        <AlertButton />
+      </div>
     </div>
   );
 }
-
-export default App;
