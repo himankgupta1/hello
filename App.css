@@ -1,46 +1,76 @@
+/* General Page Styling */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  padding: 30px;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Navbar */
+.navbar {
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Container */
 .container {
-  max-width: 700px;
-  margin: auto;
-}
-
-h2 {
-  color: #333;
-  text-align: left;
-  margin-bottom: 25px;
-}
-
-.component-box {
-  border: 2px solid #007bff;
+  background: white;
+  padding: 20px;
   border-radius: 8px;
-  padding: 10px 15px;
-  margin-bottom: 15px;
-  background-color: #e9f2ff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+  margin-top: 20px;
 }
 
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 6px;
-  color: #004080;
+/* Table */
+.table {
+  background: white;
 }
 
-.output-box {
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 15px;
+.table thead {
+  background-color: #343a40;
+  color: white;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-link {
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.btn-danger {
+  color: #dc3545;
+}
+
+/* Form */
+form label {
+  font-weight: 500;
+}
+
+input.form-control {
+  border-radius: 6px;
   border: 1px solid #ccc;
-  color: #222;
 }
 
-.prop2 {
-  color: red;
-  font-style: italic;
+input.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
