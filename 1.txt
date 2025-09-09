@@ -1,0 +1,7 @@
+{
+  "loan_id": 101,
+  "doc_type": "ID_PROOF",
+  "file_uri": "https://example.com/docs/id-proof.pdf",
+  "status": "PENDING",
+  "remark": "Submitted by customer"
+}
