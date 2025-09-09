@@ -1,0 +1,9 @@
+curl -X POST http://localhost:8080/api/loan-docs \
+-H "Content-Type: application/json" \
+-d '{
+  "loan_id": 101,
+  "doc_type": "ID_PROOF",
+  "file_uri": "https://example.com/docs/id-proof.pdf",
+  "status": "PENDING",
+  "remark": "Submitted by customer"
+}'
