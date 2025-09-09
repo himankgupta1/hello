@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "dob": "1995-06-15",
+  "adhar_num": "123456789012",
+  "age": 30,
+  "created_at": "2025-09-09T10:20:30Z",
+  "current_address": "123 MG Road, Chennai, TN",
+  "cust_id": "CUST1001",
+  "email": "john.doe@example.com",
+  "first_name": "John",
+  "gender": "Male",
+  "last_name": "Doe",
+  "marital_status": "Single",
+  "middle_name": "Michael",
+  "pan_num": "ABCDE1234F",
+  "permanent_address": "45 Park Street, Bangalore, KA",
+  "phone_num": "+91-9876543210",
+  "update_at": "2025-09-09T10:45:00Z",
+  "login_id": "john_doe_95"
+}
