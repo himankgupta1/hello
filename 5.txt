@@ -1,0 +1,12 @@
+{
+  "loan": {
+    "id": 1
+  },
+  "customer": {
+    "id": 2
+  },
+  "referenceName": "Alice Smith",
+  "relationship": "Colleague",
+  "address": "123 MG Road, Chennai",
+  "contactNumber": "9876543210"
+}
